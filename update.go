@@ -22,17 +22,20 @@ var (
 	uosArch = []string{"mips64", "sw64"}
 
 	sources = []string{
-		"qt6-base",
-		"qt6-svg",
-		"qt6-declarative",
-		"qt6-imageformats",
-		"qt6-multimedia",
-		"qt6-speech",
-		"qt6-tools",
-		"qt6-wayland",
-		"qt6-translations",
-		"qt6-5compat",
+		// Qt5 上游源包（Debian 命名 *-opensource-src），替代 DTK6 的 qt6-*
+		"qtbase-opensource-src",
+		"qtsvg-opensource-src",
+		"qtdeclarative-opensource-src",
+		"qtimageformats-opensource-src",
+		"qtmultimedia-opensource-src",
+		"qtspeech-opensource-src",
+		"qttools-opensource-src",
+		"qtwayland-opensource-src",
+		"qttranslations-opensource-src",
+		"qtquickcontrols2-opensource-src",
+		// qt6-5compat 是 Qt6→Qt5 兼容层，Qt5 runtime 不需要，已移除
 
+		// DTK 源包名不变（同源包同时产出 dtk5/dtk6 二进制，靠过滤逻辑区分）
 		"dtkcore",
 		"dtkdeclarative",
 		"dtkgui",
@@ -43,8 +46,6 @@ var (
 		"dde-qt5platform-plugins",
 
 		"fcitx5-qt",
-		"deepin-shortcut-viewer",
-		"uos-license-content",
 	}
 )
 
@@ -91,25 +92,28 @@ func main() {
 				continue
 			}
 
-			// 过滤dtk5
+			// 过滤dtk6（DTK5 runtime：保留 dtk5、排除 dtk6；与 DTK6 逻辑相反）
 			if src != "dtkcommon" {
-				if strings.Contains(pkg, "dtk") && !strings.Contains(pkg, "dtk6") {
+				if strings.Contains(pkg, "dtk6") {
 					excludePackage(pkg)
 					continue
 				}
 			}
+			// dtkdeclarative 的 QML 模块：保留 Qt5 风格 qml-module-*，排除 Qt6 风格 qml6-module-*
 			if src == "dtkdeclarative" {
-				if strings.HasPrefix(pkg, "qml-module") {
+				if strings.HasPrefix(pkg, "qml6-module") {
 					excludePackage(pkg)
 					continue
 				}
 			}
-			if strings.HasPrefix(pkg, "dde-") && strings.Contains(pkg, "qt5") {
+			// dde-qt 集成：保留 qt5、排除 qt6（与 DTK6 逻辑相反）
+			if strings.HasPrefix(pkg, "dde-") && strings.Contains(pkg, "qt6") {
 				excludePackage(pkg)
 				continue
 			}
 
-			if slices.Contains([]string{"fcitx5-frontend-qt5", "libfcitx5-qt-dev", "libfcitx5-qt1"}, pkg) {
+			// fcitx5-qt：保留 qt5 前端、排除 qt6（与 DTK6 逻辑相反）
+			if slices.Contains([]string{"fcitx5-frontend-qt6", "libfcitx5-qt6-dev", "libfcitx5-qt6-1"}, pkg) {
 				excludePackage(pkg)
 				continue
 			}
@@ -180,6 +184,13 @@ func updateYamlFiles(content []byte) {
 		for _, line := range lines {
 			if strings.Contains(line, "linglong:gen_deb_source sources") {
 				break // 找到锚点，停止读取旧内容
+			}
+			// dtk5：包 id 与描述与基线 dtk6 不同，按行整体替换 yaml 头部（幂等，可重复运行）
+			if strings.HasPrefix(strings.TrimSpace(line), "id:") {
+				line = "  id: org.deepin.runtime.dtk5"
+			}
+			if strings.HasPrefix(strings.TrimSpace(line), "description:") {
+				line = "  description: Deepin Tool Kit 5 Widget"
 			}
 			newLines = append(newLines, line)
 		}
