@@ -1,11 +1,11 @@
 version: "1"
 
 package:
-  id: org.deepin.runtime.dtk
+  id: org.deepin.runtime.dtk5
   name: deepin runtime
   kind: runtime
   version: 6.7.0.50
-  description: Deepin Tool Kit Widget
+  description: Deepin Tool Kit 5 Widget
 
 base: org.deepin.base/25.2.2
 
@@ -14,197 +14,176 @@ build: |
 
 sources:
   # linglong:gen_deb_source sources amd64 http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun stable main
-  # source package qt6-base
-  # linglong:gen_deb_source install libqt6concurrent6
-  # linglong:gen_deb_source install libqt6core6
-  # linglong:gen_deb_source install libqt6dbus6
-  # linglong:gen_deb_source install libqt6gui6
-  # linglong:gen_deb_source install libqt6network6
-  # linglong:gen_deb_source install libqt6opengl6
-  # linglong:gen_deb_source install libqt6openglwidgets6
-  # linglong:gen_deb_source install libqt6printsupport6
-  # linglong:gen_deb_source install libqt6sql6
-  # linglong:gen_deb_source install libqt6sql6-ibase
-  # linglong:gen_deb_source install libqt6sql6-mysql
-  # linglong:gen_deb_source install libqt6sql6-odbc
-  # linglong:gen_deb_source install libqt6sql6-psql
-  # linglong:gen_deb_source install libqt6sql6-sqlite
-  # linglong:gen_deb_source install libqt6test6
-  # linglong:gen_deb_source install libqt6widgets6
-  # linglong:gen_deb_source install libqt6xml6
-  # linglong:gen_deb_source install qmake6
-  # linglong:gen_deb_source install qmake6-bin
-  # linglong:gen_deb_source install qt6-base-dev
-  # linglong:gen_deb_source install qt6-base-dev-tools
-  # linglong:gen_deb_source install qt6-base-private-dev
-  # linglong:gen_deb_source install qt6-gtk-platformtheme
-  # linglong:gen_deb_source install qt6-qpa-plugins
-  # linglong:gen_deb_source install qt6-xcb-private-headers-dev
-  # linglong:gen_deb_source install qt6-xdgdesktopportal-platformtheme
-  # source package qt6-svg
-  # linglong:gen_deb_source install libqt6svg6
-  # linglong:gen_deb_source install libqt6svgwidgets6
-  # linglong:gen_deb_source install qt6-svg-dev
-  # linglong:gen_deb_source install qt6-svg-private-dev
-  # source package qt6-declarative
-  # linglong:gen_deb_source install libqt6qml6
-  # linglong:gen_deb_source install libqt6qmlcompiler6
-  # linglong:gen_deb_source install libqt6qmlmeta6
-  # linglong:gen_deb_source install libqt6qmlmodels6
-  # linglong:gen_deb_source install libqt6qmlnetwork6
-  # linglong:gen_deb_source install libqt6qmlworkerscript6
-  # linglong:gen_deb_source install libqt6quick6
-  # linglong:gen_deb_source install libqt6quickcontrols2-6
-  # linglong:gen_deb_source install libqt6quickshapes6
-  # linglong:gen_deb_source install libqt6quicktemplates2-6
-  # linglong:gen_deb_source install libqt6quicktest6
-  # linglong:gen_deb_source install libqt6quickvectorimage6
-  # linglong:gen_deb_source install libqt6quickvectorimagegenerator6
-  # linglong:gen_deb_source install libqt6quickwidgets6
-  # linglong:gen_deb_source install qml-qt6
-  # linglong:gen_deb_source install qml6-module-qmltime
-  # linglong:gen_deb_source install qml6-module-qt-labs-animation
-  # linglong:gen_deb_source install qml6-module-qt-labs-folderlistmodel
-  # linglong:gen_deb_source install qml6-module-qt-labs-platform
-  # linglong:gen_deb_source install qml6-module-qt-labs-qmlmodels
-  # linglong:gen_deb_source install qml6-module-qt-labs-settings
-  # linglong:gen_deb_source install qml6-module-qt-labs-sharedimage
-  # linglong:gen_deb_source install qml6-module-qt-labs-wavefrontmesh
-  # linglong:gen_deb_source install qml6-module-qtcore
-  # linglong:gen_deb_source install qml6-module-qtnetwork
-  # linglong:gen_deb_source install qml6-module-qtqml
-  # linglong:gen_deb_source install qml6-module-qtqml-base
-  # linglong:gen_deb_source install qml6-module-qtqml-models
-  # linglong:gen_deb_source install qml6-module-qtqml-workerscript
-  # linglong:gen_deb_source install qml6-module-qtqml-xmllistmodel
-  # linglong:gen_deb_source install qml6-module-qtquick
-  # linglong:gen_deb_source install qml6-module-qtquick-controls
-  # linglong:gen_deb_source install qml6-module-qtquick-dialogs
-  # linglong:gen_deb_source install qml6-module-qtquick-effects
-  # linglong:gen_deb_source install qml6-module-qtquick-layouts
-  # linglong:gen_deb_source install qml6-module-qtquick-localstorage
-  # linglong:gen_deb_source install qml6-module-qtquick-nativestyle
-  # linglong:gen_deb_source install qml6-module-qtquick-particles
-  # linglong:gen_deb_source install qml6-module-qtquick-shapes
-  # linglong:gen_deb_source install qml6-module-qtquick-templates
-  # linglong:gen_deb_source install qml6-module-qtquick-tooling
-  # linglong:gen_deb_source install qml6-module-qtquick-vectorimage
-  # linglong:gen_deb_source install qml6-module-qtquick-window
-  # linglong:gen_deb_source install qml6-module-qttest
-  # linglong:gen_deb_source install qmlscene-qt6
-  # linglong:gen_deb_source install qt6-declarative-dev
-  # linglong:gen_deb_source install qt6-declarative-dev-tools
-  # linglong:gen_deb_source install qt6-declarative-private-dev
-  # linglong:gen_deb_source install qt6-qmllint-plugins
-  # linglong:gen_deb_source install qt6-qmltooling-plugins
-  # source package qt6-imageformats
-  # linglong:gen_deb_source install qt6-image-formats-plugins
-  # source package qt6-multimedia
-  # linglong:gen_deb_source install libqt6multimedia6
-  # linglong:gen_deb_source install libqt6multimediawidgets6
-  # linglong:gen_deb_source install libqt6spatialaudio6
-  # linglong:gen_deb_source install qml6-module-qtmultimedia
-  # linglong:gen_deb_source install qml6-module-qtquick3d-spatialaudio
-  # linglong:gen_deb_source install qt6-multimedia-dev
-  # source package qt6-speech
-  # linglong:gen_deb_source install libqt6texttospeech6
-  # linglong:gen_deb_source install qml6-module-qttexttospeech
-  # linglong:gen_deb_source install qt6-speech-dev
-  # linglong:gen_deb_source install qt6-speech-flite-plugin
-  # linglong:gen_deb_source install qt6-speech-speechd-plugin
-  # source package qt6-tools
-  # linglong:gen_deb_source install assistant-qt6
-  # linglong:gen_deb_source install designer-qt6
-  # linglong:gen_deb_source install libqt6designer6
-  # linglong:gen_deb_source install libqt6designercomponents6
-  # linglong:gen_deb_source install libqt6help6
-  # linglong:gen_deb_source install libqt6uitools6
-  # linglong:gen_deb_source install linguist-qt6
-  # linglong:gen_deb_source install qdbus-qt6
-  # linglong:gen_deb_source install qt6-documentation-tools
-  # linglong:gen_deb_source install qt6-l10n-tools
-  # linglong:gen_deb_source install qt6-tools-dev
-  # linglong:gen_deb_source install qt6-tools-dev-tools
-  # linglong:gen_deb_source install qt6-tools-private-dev
-  # source package qt6-wayland
-  # linglong:gen_deb_source install libqt6waylandclient6
-  # linglong:gen_deb_source install libqt6waylandcompositor6
-  # linglong:gen_deb_source install libqt6wlshellintegration6
-  # linglong:gen_deb_source install qml6-module-qtwayland-client-texturesharing
-  # linglong:gen_deb_source install qml6-module-qtwayland-compositor
-  # linglong:gen_deb_source install qt6-wayland
-  # linglong:gen_deb_source install qt6-wayland-dev
-  # linglong:gen_deb_source install qt6-wayland-dev-tools
-  # linglong:gen_deb_source install qt6-wayland-private-dev
-  # source package qt6-translations
-  # linglong:gen_deb_source install qt6-translations-l10n
-  # source package qt6-5compat
-  # linglong:gen_deb_source install libqt6core5compat6
-  # linglong:gen_deb_source install qml6-module-qt5compat-graphicaleffects
-  # linglong:gen_deb_source install qt6-5compat-dev
+  # source package qtbase-opensource-src
+  # linglong:gen_deb_source install libqt5concurrent5
+  # linglong:gen_deb_source install libqt5core5a
+  # linglong:gen_deb_source install libqt5dbus5
+  # linglong:gen_deb_source install libqt5gui5
+  # linglong:gen_deb_source install libqt5network5
+  # linglong:gen_deb_source install libqt5opengl5
+  # linglong:gen_deb_source install libqt5opengl5-dev
+  # linglong:gen_deb_source install libqt5printsupport5
+  # linglong:gen_deb_source install libqt5sql5
+  # linglong:gen_deb_source install libqt5sql5-ibase
+  # linglong:gen_deb_source install libqt5sql5-mysql
+  # linglong:gen_deb_source install libqt5sql5-odbc
+  # linglong:gen_deb_source install libqt5sql5-psql
+  # linglong:gen_deb_source install libqt5sql5-sqlite
+  # linglong:gen_deb_source install libqt5sql5-tds
+  # linglong:gen_deb_source install libqt5test5
+  # linglong:gen_deb_source install libqt5widgets5
+  # linglong:gen_deb_source install libqt5xml5
+  # linglong:gen_deb_source install qt5-default
+  # linglong:gen_deb_source install qt5-flatpak-platformtheme
+  # linglong:gen_deb_source install qt5-gtk-platformtheme
+  # linglong:gen_deb_source install qt5-qmake
+  # linglong:gen_deb_source install qt5-qmake-bin
+  # linglong:gen_deb_source install qt5-xdgdesktopportal-platformtheme
+  # linglong:gen_deb_source install qtbase5-dev
+  # linglong:gen_deb_source install qtbase5-dev-tools
+  # linglong:gen_deb_source install qtbase5-private-dev
+  # source package qtsvg-opensource-src
+  # linglong:gen_deb_source install libqt5svg5
+  # linglong:gen_deb_source install libqt5svg5-dev
+  # source package qtdeclarative-opensource-src
+  # linglong:gen_deb_source install libqt5qml5
+  # linglong:gen_deb_source install libqt5qmlmodels5
+  # linglong:gen_deb_source install libqt5qmlworkerscript5
+  # linglong:gen_deb_source install libqt5quick5
+  # linglong:gen_deb_source install libqt5quickparticles5
+  # linglong:gen_deb_source install libqt5quickshapes5
+  # linglong:gen_deb_source install libqt5quicktest5
+  # linglong:gen_deb_source install libqt5quickwidgets5
+  # linglong:gen_deb_source install qml
+  # linglong:gen_deb_source install qml-module-qt-labs-animation
+  # linglong:gen_deb_source install qml-module-qt-labs-folderlistmodel
+  # linglong:gen_deb_source install qml-module-qt-labs-qmlmodels
+  # linglong:gen_deb_source install qml-module-qt-labs-settings
+  # linglong:gen_deb_source install qml-module-qt-labs-sharedimage
+  # linglong:gen_deb_source install qml-module-qt-labs-wavefrontmesh
+  # linglong:gen_deb_source install qml-module-qtqml
+  # linglong:gen_deb_source install qml-module-qtqml-models2
+  # linglong:gen_deb_source install qml-module-qtqml-statemachine
+  # linglong:gen_deb_source install qml-module-qtqml-workerscript2
+  # linglong:gen_deb_source install qml-module-qtquick-layouts
+  # linglong:gen_deb_source install qml-module-qtquick-localstorage
+  # linglong:gen_deb_source install qml-module-qtquick-particles2
+  # linglong:gen_deb_source install qml-module-qtquick-shapes
+  # linglong:gen_deb_source install qml-module-qtquick-window2
+  # linglong:gen_deb_source install qml-module-qtquick2
+  # linglong:gen_deb_source install qml-module-qttest
+  # linglong:gen_deb_source install qmlscene
+  # linglong:gen_deb_source install qt5-qmltooling-plugins
+  # linglong:gen_deb_source install qtdeclarative5-dev
+  # linglong:gen_deb_source install qtdeclarative5-dev-tools
+  # linglong:gen_deb_source install qtdeclarative5-private-dev
+  # source package qtimageformats-opensource-src
+  # linglong:gen_deb_source install qt5-image-formats-plugins
+  # source package qtmultimedia-opensource-src
+  # linglong:gen_deb_source install libqt5multimedia5
+  # linglong:gen_deb_source install libqt5multimedia5-plugins
+  # linglong:gen_deb_source install libqt5multimediagsttools5
+  # linglong:gen_deb_source install libqt5multimediaquick5
+  # linglong:gen_deb_source install libqt5multimediawidgets5
+  # linglong:gen_deb_source install qml-module-qtaudioengine
+  # linglong:gen_deb_source install qml-module-qtmultimedia
+  # linglong:gen_deb_source install qtmultimedia5-dev
+  # source package qtspeech-opensource-src
+  # linglong:gen_deb_source install libqt5texttospeech5
+  # linglong:gen_deb_source install libqt5texttospeech5-dev
+  # linglong:gen_deb_source install qtspeech5-flite-plugin
+  # linglong:gen_deb_source install qtspeech5-speechd-plugin
+  # source package qttools-opensource-src
+  # linglong:gen_deb_source install libqt5designer5
+  # linglong:gen_deb_source install libqt5designercomponents5
+  # linglong:gen_deb_source install libqt5help5
+  # linglong:gen_deb_source install qdbus
+  # linglong:gen_deb_source install qdbus-qt5
+  # linglong:gen_deb_source install qdoc-qt5
+  # linglong:gen_deb_source install qhelpgenerator-qt5
+  # linglong:gen_deb_source install qt5-assistant
+  # linglong:gen_deb_source install qtattributionsscanner-qt5
+  # linglong:gen_deb_source install qttools5-dev
+  # linglong:gen_deb_source install qttools5-dev-tools
+  # linglong:gen_deb_source install qttools5-private-dev
+  # source package qtwayland-opensource-src
+  # linglong:gen_deb_source install libqt5waylandclient5
+  # linglong:gen_deb_source install libqt5waylandclient5-dev
+  # linglong:gen_deb_source install libqt5waylandcompositor5
+  # linglong:gen_deb_source install libqt5waylandcompositor5-dev
+  # linglong:gen_deb_source install qml-module-qtwayland-client-texturesharing
+  # linglong:gen_deb_source install qml-module-qtwayland-compositor
+  # linglong:gen_deb_source install qtwayland5
+  # linglong:gen_deb_source install qtwayland5-dev-tools
+  # linglong:gen_deb_source install qtwayland5-private-dev
+  # source package qttranslations-opensource-src
+  # linglong:gen_deb_source install qttranslations5-l10n
+  # source package qtquickcontrols2-opensource-src
+  # linglong:gen_deb_source install libqt5quickcontrols2-5
+  # linglong:gen_deb_source install libqt5quicktemplates2-5
+  # linglong:gen_deb_source install qml-module-qt-labs-calendar
+  # linglong:gen_deb_source install qml-module-qt-labs-platform
+  # linglong:gen_deb_source install qml-module-qtquick-controls2
+  # linglong:gen_deb_source install qml-module-qtquick-templates2
+  # linglong:gen_deb_source install qtquickcontrols2-5-dev
+  # linglong:gen_deb_source install qtquickcontrols2-5-private-dev
   # source package dtkcore
-  # linglong:gen_deb_source install libdtk6core
-  # linglong:gen_deb_source install libdtk6core-bin
-  # linglong:gen_deb_source install libdtk6core-dev
+  # linglong:gen_deb_source install libdtkcore-dev
+  # linglong:gen_deb_source install libdtkcore5
+  # linglong:gen_deb_source install libdtkcore5-bin
   # source package dtkdeclarative
-  # linglong:gen_deb_source install dtk6-exhibition
-  # linglong:gen_deb_source install libdtk6declarative
-  # linglong:gen_deb_source install libdtk6declarative-dev
-  # linglong:gen_deb_source install qml6-module-qtquick-controls2-styles-chameleon
+  # linglong:gen_deb_source install dtk-exhibition
+  # linglong:gen_deb_source install libdtkdeclarative-dev
+  # linglong:gen_deb_source install libdtkdeclarative5
+  # linglong:gen_deb_source install qml-module-qtquick-controls2-styles-chameleon
   # source package dtkgui
-  # linglong:gen_deb_source install libdtk6gui
-  # linglong:gen_deb_source install libdtk6gui-bin
-  # linglong:gen_deb_source install libdtk6gui-dev
+  # linglong:gen_deb_source install libdtkgui-dev
+  # linglong:gen_deb_source install libdtkgui5
+  # linglong:gen_deb_source install libdtkgui5-bin
   # source package dtkwidget
-  # linglong:gen_deb_source install libdtk6widget
-  # linglong:gen_deb_source install libdtk6widget-bin
-  # linglong:gen_deb_source install libdtk6widget-dev
+  # linglong:gen_deb_source install libdtkwidget-dev
+  # linglong:gen_deb_source install libdtkwidget5
+  # linglong:gen_deb_source install libdtkwidget5-bin
   # source package dtklog
-  # linglong:gen_deb_source install libdtk6log
-  # linglong:gen_deb_source install libdtk6log-dev
+  # linglong:gen_deb_source install libdtklog
+  # linglong:gen_deb_source install libdtklog-dev
   # source package dtkcommon
   # linglong:gen_deb_source install libdtkcommon-dev
   # linglong:gen_deb_source install libdtkdata
   # source package qt5integration
-  # linglong:gen_deb_source install dde-qt6integration
+  # linglong:gen_deb_source install dde-qt5integration
   # source package dde-qt5platform-plugins
-  # linglong:gen_deb_source install dde-qt6xcb-plugin
+  # linglong:gen_deb_source install dde-qt5wayland-plugin
+  # linglong:gen_deb_source install dde-qt5xcb-plugin
   # source package fcitx5-qt
-  # linglong:gen_deb_source install fcitx5-frontend-qt6
+  # linglong:gen_deb_source install fcitx5-frontend-qt5
   # linglong:gen_deb_source install libfcitx5-qt-data
-  # linglong:gen_deb_source install libfcitx5-qt6-1
-  # linglong:gen_deb_source install libfcitx5-qt6-dev
-  # source package deepin-shortcut-viewer
-  # linglong:gen_deb_source install deepin-shortcut-viewer
-  # source package uos-license-content
-  # linglong:gen_deb_source install uos-license-content
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/assistant-qt6_6.8.0-0deepin3_amd64.deb
-    digest: 8b5df0b28f8a7cfc63a1ba4ac369f09a66e19d47a462c4bc8fa8bc552f18a714
+  # linglong:gen_deb_source install libfcitx5-qt-dev
+  # linglong:gen_deb_source install libfcitx5-qt1
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dbus-broker/dbus-broker_29-3_amd64.deb
     digest: 68ff1baedb2f4ced1ff5d2f9c3e59bd21e741b7710931e0539c89ef5951df8ba
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt5integration/dde-qt6integration_6.7.50-1_amd64.deb
-    digest: 636d33fad1fd79cbadf26872a8b585582f67a30baec712c4f46d71d3602e6e04
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt5integration/dde-qt5integration_6.7.50-1_amd64.deb
+    digest: d865ad1c2b05969b809ef11e09248143a656e718925c704c2fb05d3aeab173fc
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dde-qt5platform-plugins/dde-qt6xcb-plugin_6.7.50-1_amd64.deb
-    digest: 44849a4ebbaf27b614428a970b21d572643b813d6a6fa2172338a73b0bb4ca36
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dde-qt5platform-plugins/dde-qt5wayland-plugin_6.7.50-1_amd64.deb
+    digest: a7607529167c7274b89c859cc5ff7a7935122fec7cbfbb38d1f55105006bae7e
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/deepin-shortcut-viewer/deepin-shortcut-viewer_5.5.6_amd64.deb
-    digest: 8502f9dda05684b5114e9497d55e057aa3911f5b03e27db317a211f4bc3389fd
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/designer-qt6_6.8.0-0deepin3_amd64.deb
-    digest: ec9d003e1996d9dd70c29c8b1d1ecbb0df0523cb64eb617e2e958fe59ef3110a
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dde-qt5platform-plugins/dde-qt5xcb-plugin_6.7.50-1_amd64.deb
+    digest: 4737307bb44b6941408384295bc52840a9d8e7302f191bcf4e26a52fd1f65181
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dpkg/dpkg-dev_1.22.6deepin10_all.deb
     digest: ad27e359a1fe3485255ce3c17eab99ae42ce1aa03acd67e45a2751710dc463c0
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/dtk6-exhibition_6.7.50-1_amd64.deb
-    digest: c2443c26e14986cbc3570d2b8fe8408a7ccc97b4f93b019d30507612a6fd3740
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/dtk-exhibition_6.7.50-1_amd64.deb
+    digest: f9f2b43acbff64087e62a2401ef456da79468a4b5aa14a05bc46dcee17c58190
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/fcitx5-frontend-qt6_5.1.9-1deepin2_amd64.deb
-    digest: 65683c020945c215779f124a3ddc52b1067482848fd5b7c0cee8a4e07868d3ac
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dwayland/dwayland-data_5.25.0-kwayland.5.24.3_amd64.deb
+    digest: 1a10f5caf0ca36f33fb52715d07f9ded094b6e22e2cfc0f6cfd366d1fd8ddee1
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/fcitx5-frontend-qt5_5.1.9-1deepin2_amd64.deb
+    digest: aca09ad7d56c923585db4f9fea866a88ba4028d0a8ab3164ccc9b7ba84b11590
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/firebird4.0/firebird4.0-common-doc_4.0.5.3140.ds6-17_all.deb
     digest: fafd08c872d1279aa0bde2e0bdf40a57721961934c0593352b6a2c551aa232a5
@@ -227,20 +206,14 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/t/tex-gyre/fonts-texgyre_20180621-3.1_all.deb
     digest: f66d6f798c4b99d8490558cc8209c069b0fe5577c11378c0e01f9e87ddf10824
   - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/freetds/freetds-common_1.2.3.1-deepin1+rb3_all.deb
+    digest: 31d072e1fbad07715f0f708ed4ae87b5e230875f61729a6855c6ec835c50c4b1
+  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libg/libgudev/gir1.2-gudev-1.0_238-6_amd64.deb
     digest: 3deeaae0728e06b5746cab0b8f621986d6355ec09ca1130719c7be1900b1171b
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/ffmpeg/libavformat60_6.1.5-0deepin3_amd64.deb
-    digest: 1ffd35eb7364c1b7c360db8e7a75663b36b005bdd3154e79ab184a61d0f19fc4
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libb/libb2/libb2-1_0.98.1-1.1_amd64.deb
-    digest: ad82b2de93cc49cdf37c861b03275245318b1555255639e5e805cf612a40171e
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/u/util-linux/libblkid-dev_2.40.4-3deepin9_amd64.deb
     digest: 9b9bd06169d7b6d031810f25f45a734052ebecab866a88ed1b2610fccf2fd739
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libb/libbluray/libbluray2_1.3.4-1+rb2_amd64.deb
-    digest: 563f4d3b275996192a906b926390435bb3e444294f8766b8db5ba66f199db55d
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/b/brotli/libbrotli-dev_1.1.0-2_amd64.deb
     digest: 87226cff96c560b3ea8b15110f7f2b00047b0cc9dd29c9fdbc372b4d9154de80
@@ -250,15 +223,6 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/c/capstone/libcapstone5_5.0.3-1deepin1_amd64.deb
     digest: 6db3579d187130f77651200eedb97e0c8aad4b081770c4ac68f3ab2d3570efef
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/c/chromaprint/libchromaprint1_1.5.1-4deepin0_amd64.deb
-    digest: 1ee2dbafa2c331d58cf10cdf546c760d7a734c5d9fab1b16d2e04e51f6e38623
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/c/cjson/libcjson1_1.7.18-3.1deepin1_amd64.deb
-    digest: 0c0ac88efe846e4cccd84c896722e981be3a276b984541a4aeb67b1a97a86100
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/l/llvm-toolchain-17/libclang-cpp17_17.0.6-5deepin7_amd64.deb
-    digest: 88e484221866f3b51022b4e8dcd3d4a2f156e2de8118603f266d90aacaecb759
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/l/llvm-toolchain-17/libclang1-17_17.0.6-5deepin7_amd64.deb
     digest: 5816b1f4f5a5f2cce5737ea3c39525189212f4fcc955e4f2e3c5ad26d887964c
@@ -278,50 +242,59 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dpkg/libdpkg-perl_1.22.6deepin10_all.deb
     digest: 5ac1e65112a190dfca99abf002e3e3f0ee033919b7b65cef5e3637ff1821cc9b
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcore/libdtk6core-bin_6.7.50-1_amd64.deb
-    digest: 45c30f5115d23805ee7d756408c03b3e232961c95a71f03178e2779b69a26c02
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcore/libdtk6core-dev_6.7.50-1_amd64.deb
-    digest: 8eecf8ea8844397317524d169d1f0c5d0692b60a4472d3321098670badfaeb09
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcore/libdtk6core_6.7.50-1_amd64.deb
-    digest: 517ae66863a5d2ad6a854c625e3f8371eff24a2415bfb7fa9720eb6467504727
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/libdtk6declarative-dev_6.7.50-1_amd64.deb
-    digest: 73a0349d6fa94fe8634d404a3b96574d9dd6fef2c3d63976117a0fafe33d108a
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/libdtk6declarative_6.7.50-1_amd64.deb
-    digest: f04d29101660f18b689045e6cc180d8664d99eb56cc1a0c1b40271862124c837
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkgui/libdtk6gui-bin_6.7.50-1_amd64.deb
-    digest: a64f7171e739733de95949852ef9e27ef0bde420c5aa21e012907fe84c717aa8
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkgui/libdtk6gui-dev_6.7.50-1_amd64.deb
-    digest: 6be3d3d216166738198201aac6bf04981dd0ad0dd2f480349252dc946adbfe5f
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkgui/libdtk6gui_6.7.50-1_amd64.deb
-    digest: 8c85645ad393e82e6557d5455fa228ee4d8822d32290c16ecd07644b3348ec1e
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtklog/libdtk6log-dev_6.7.50-1_amd64.deb
-    digest: 572b8796f790a368d0257c6c4beddf1c60f51561e6cf5c4e80c5270b346933c4
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtklog/libdtk6log_6.7.50-1_amd64.deb
-    digest: a6a8c6ca9613f6f16b66ee38fd2e57c4cc9aaf6490303e3ce764307674791351
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkwidget/libdtk6widget-bin_6.7.50-1_amd64.deb
-    digest: f9c1ea3cef758e666e6e5369360bb6adef029ac230f8ae15e5fc9b00b67a0ab6
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkwidget/libdtk6widget-dev_6.7.50-1_amd64.deb
-    digest: 81c6760c182a997f3156ca364e0de5f7a9e2613855e2a53b36b034faa08d34ed
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkwidget/libdtk6widget_6.7.50-1_amd64.deb
-    digest: d61548b6cedcbf1e9a57d352ddf9d374a1b0e11b6f27326ca963a2b007d6a4fb
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcommon/libdtkcommon-dev_6.7.50-1_amd64.deb
     digest: a7e8a99456f4fa785b0b58f03e63e87988d984ca3ee08f1b1284d0a7748c5dd4
   - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcore/libdtkcore-dev_6.7.50-1_amd64.deb
+    digest: 5c8251984e17adbdbc84ac7aaa57bb7e51e1f2f730e64493017c92267c12d51b
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcore/libdtkcore5-bin_6.7.50-1_amd64.deb
+    digest: 24cc8282f544c6122882de80954f91e5444d806cc98188cd42ee90592b3fe185
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcore/libdtkcore5_6.7.50-1_amd64.deb
+    digest: 8f114e4cffed3c28081d9249fc9503a783132ab8ea1bab598cf1c367a82b41c1
+  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkcommon/libdtkdata_6.7.50-1_amd64.deb
     digest: 30cfa79b06b27949ad2622c7250f60012c9461569e148089dc4a308e4d8b8464
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/libdtkdeclarative-dev_6.7.50-1_amd64.deb
+    digest: d03ceaee7dea27c7f480328d46abc561e93439b6a47fb876fa786321d664beb9
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/libdtkdeclarative5_6.7.50-1_amd64.deb
+    digest: 2fdc4a53a3d3678bc024a24b9ae16873f66483107306a5cc1fc189d5fb8eeaa5
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkgui/libdtkgui-dev_6.7.50-1_amd64.deb
+    digest: fc17975bd81df0952da0f8785357df1493def8c88d16be1a896fbe8144f8e1a1
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkgui/libdtkgui5-bin_6.7.50-1_amd64.deb
+    digest: b2b18bb57c6f1a38d1496930297c76e73bbe3aa4fbba37be3b79d7748fa1fbf8
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkgui/libdtkgui5_6.7.50-1_amd64.deb
+    digest: 230e8cd7eaa97d98731a2ac4eaea470578ffe38db2074aab29938da75014b7ce
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtklog/libdtklog-dev_6.7.50-1_amd64.deb
+    digest: d8c2d4cd5e51e753ff1ae0c5bb8b06a98b19930374a03d516b7334a98405c0a6
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtklog/libdtklog_6.7.50-1_amd64.deb
+    digest: 8f04d5e7f408a299fecdb9a1452aa2270c3b6abfa8c02266c4af643c3b98f5c6
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkwidget/libdtkwidget-dev_6.7.50-1_amd64.deb
+    digest: 50c08a9069b68017ecbebe19cf62e9c35277903c565f3481f4e116bc19392a12
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkwidget/libdtkwidget5-bin_6.7.50-1_amd64.deb
+    digest: 4f38829f335784ea1165a7d4d878ab5a9156eead03f1e7adc5768b4fc74867ee
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkwidget/libdtkwidget5_6.7.50-1_amd64.deb
+    digest: 655b024b0642fafca43e625f46e8f9b4e8665a2187b0808ec059e381ca932857
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dwayland/libdwaylandclient5_5.25.0-kwayland.5.24.3_amd64.deb
+    digest: 3953ddaf5793817fbb587b7f6f60d5381151fef795f03b55bf1d6d6836117cc5
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libg/libglvnd/libegl-dev_1.7.0-1deepin1_amd64.deb
+    digest: 42e40389327d2d5807cd44b049c608986a7bf882526fd902cbd8919b66ad29b6
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libe/libencode-perl/libencode-perl_3.20-1_amd64.deb
+    digest: c0208a4ce07f35b64991fa0b8c72080af2b3bf3f86e612f71a0b3a6a2dbaf3ab
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libe/libevdev/libevdev-dev_1.13.4+dfsg-1_amd64.deb
     digest: 97ad0dfcf56a9bbd5a2e768603d686cd1fafb9164584bd1662fd95b49d0a9c4c
@@ -338,11 +311,11 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/libfcitx5-qt-data_5.1.9-1deepin2_all.deb
     digest: 83423aa61a041c479b58a7cf643ecf0956d28c16905e63a735b5d201894269db
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/libfcitx5-qt6-1_5.1.9-1deepin2_amd64.deb
-    digest: 6401d153a7627eb77dbc81b7f85b1e966b22907205affbed42fae7d0c2aa550e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/libfcitx5-qt-dev_5.1.9-1deepin2_amd64.deb
+    digest: 6603ed4f334405da1452bbcd387071248c25d4e33d4009acb8a31fc5f35d726a
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/libfcitx5-qt6-dev_5.1.9-1deepin2_amd64.deb
-    digest: 90faedfafe80ceac8774c072e117f6fdb277ae7bcaa040a421138dfe61429312
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5-qt/libfcitx5-qt1_5.1.9-1deepin2_amd64.deb
+    digest: c650bc0c4f97707302b6c527faf5dcbe82ce9ede861afff44737f3d0d5a61443
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fcitx5/libfcitx5utils2_5.1.12-2deepin6_amd64.deb
     digest: a6d50b000fb897cea26ce9d563074058ba14618b687f68af7f31270d5a3f190b
@@ -350,8 +323,17 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libf/libffi/libffi-dev_3.4.6-1_amd64.deb
     digest: eadc61825e77bad028fd5eff398ac0e13da7a08870261058525d3f620d90cb7b
   - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libf/libfile-basedir-perl/libfile-basedir-perl_0.09-1_all.deb
+    digest: 79f5ef747c15be92e24a1adeea98e3d4c01b1b90b730a184a8ca4959a1aa4684
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libf/libfile-desktopentry-perl/libfile-desktopentry-perl_0.22-2_all.deb
+    digest: 19ed7f791a824bd6525c02cc6011bbd614880f3408e78eff5e16e1e9990334a8
+  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libf/libfile-find-rule-perl/libfile-find-rule-perl_0.34-1_all.deb
     digest: 8ebc94473bf3381e34408415da523e390c2fb3be418f3c298deb6bc82373ded5
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libf/libfile-mimeinfo-perl/libfile-mimeinfo-perl_0.35-1_all.deb
+    digest: 1360095648900a78fea9d16276c0a52a006e4d151de67e1e8de4c10a5fdf74fc
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/flite/libflite1_2.2-7_amd64.deb
     digest: 8851ce503276f63416a9f1776fe8051b87c2fafcb3ed0990bd4e1572b4ad3ec8
@@ -361,6 +343,9 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fontconfig/libfontconfig-dev_2.17.1-5_amd64.deb
     digest: c43e1ec347d6fa3a1c42b273f9fdd736996f043e4a24dee4be0516c05926321a
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/fontconfig/libfontconfig1-dev_2.17.1-5_amd64.deb
+    digest: cf93394b379d10b5f43c6594e3825bdb796a35de761781ce36495542b5f4cd96
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/freetype/libfreetype-dev_2.13.2+dfsg-1deepin2_amd64.deb
     digest: 006a8d5b94347c80f13475dfc3fef138932400a38bd54f5dc762758f30e0cddd
@@ -377,11 +362,14 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/g/glib2.0/libglib2.0-dev_2.80.1-1deepin4_amd64.deb
     digest: ac3c1fd8eb08e6be3a3cb14b8ac8ee33c233bcf5b0900e48026e8fd2c53ab54b
   - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libg/libglu/libglu1-mesa-dev_9.0.2-1.1_amd64.deb
+    digest: 5fcf286e6c70c90c378d8a3d27cbf9ca34d68c1f8377559f7ba758b5b166009f
+  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libg/libglvnd/libglx-dev_1.7.0-1deepin1_amd64.deb
     digest: 5b8281d799f1b3844524c1baa475e4876665b4d6062800655e180586dc0015bf
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/g/game-music-emu/libgme0_0.6.3.2-7deepin_amd64.deb
-    digest: 6f185c6ac2987d5d8ac0f81be7f0377ac34c00ba45ba8d206ae7ef5888bbca00
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/g/gsettings-qt/libgsettings-qt1_1.0.0-2deepin1_amd64.deb
+    digest: 3346da2fee0a1e2ba5d2a06e576e6e8a6611e0c073b3c4137968d6a9d207f501
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.24.13-0deepin1_amd64.deb
     digest: dee4a03abaafa64f9c5c85b107d603f78957506a58f5a3d7a9ca50654cc9742e
@@ -392,8 +380,8 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libg/libgudev/libgudev-1.0-dev_238-6_amd64.deb
     digest: 056919a20ff7d1c9c018efddbc7c568c5362f439d371aebd7838eb89ea0ccc0b
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/g/gumbo-parser/libgumbo2_0.12.0+dfsg-2_amd64.deb
-    digest: b4036cefbbc4f6a5f73f6ac19d3065c52dc6b923691268c5b3032971465c35ac
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/h/hyphen/libhyphen0_2.8.8-7_amd64.deb
+    digest: d4d72b7419db3fb7bb9663d30c2336eee0244bee22fc8b7bdec37e266bb17ace
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libi/libinput/libinput-bin_1.26.0-1deepin5_amd64.deb
     digest: 053103d5bb15e093e098dff38967470132d0d2ac700282dac521965d61d63c37
@@ -403,6 +391,9 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libi/libinput/libinput10_1.26.0-1deepin5_amd64.deb
     digest: 41620db50b4f194759575e4b069c4bdc7f788e5a8e3a620d00345706fb01eb55
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libi/libipc-system-simple-perl/libipc-system-simple-perl_1.30-1_all.deb
+    digest: a528ecfa70fd8f3b4cc024947ff264e3952b0245be9a7147e556d8e1a037007c
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/j/jbigkit/libjbig-dev_2.1-3.1-deepin1_amd64.deb
     digest: 7ce8d535aa0768ca1cf24178b956b3bbbc82cca19ce4bbe91ab32c36038ae336
@@ -416,17 +407,11 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/l/lerc/liblerc-dev_4.0.0+ds-3_amd64.deb
     digest: 9bf199c57795a3e4c8e7cce1ef1803e32e9d31fc7cb82b5db8275f654e19b655
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/l/litehtml/liblitehtml0_0.9-0deepin1_amd64.deb
-    digest: 44596cdf0fefdc6412af3e1e0d0a4bdee4762d348cdf3818a2cca0daab437285
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/x/xz-utils/liblzma-dev_5.4.5-0.3_amd64.deb
     digest: 0e611c43cc8cee4b31dd530ef21f4efbb16caab257685a770b612146e18a6b8b
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/m/mariadb/libmariadb3_11.8.1-4deepin1_amd64.deb
     digest: a81ad1bcbf76123a98aca07e8bb02b9e21a592dfdc7513810335c18b471424b4
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/m/mbedtls/libmbedcrypto7_2.28.8-1deepin1_amd64.deb
-    digest: 3e6e0b346583febf9b616ea25c183c85f4821335a94f9cfd1d51011ec00ff3cc
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/m/md4c/libmd4c0_0.4.8-1_amd64.deb
     digest: 9f1630409adb3464aa42afc519d2163a7741d152b53c937eddea55b9fb6fb10a
@@ -443,20 +428,20 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/m/mtdev/libmtdev1_1.1.6-1_amd64.deb
     digest: 28686d830a44272e63013aae1e508f0f767ea28c2a4856d6c6724e11b2a6f93e
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/n/norm/libnorm1_1.5.9+dfsg-2_amd64.deb
-    digest: 5b552cdd40095bd94c6276021dfc5360f2a6289aa94f155ab3ab3daaef341c1d
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libn/libnumber-compare-perl/libnumber-compare-perl_0.03-2_all.deb
     digest: c37a63d53d982b9596a8e498e9ef95cf07cc245eaa2a8df8fc8546e82511fa7c
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/u/unixodbc/libodbc1_2.3.6-0.1-deepin1_amd64.deb
     digest: f38475bd848c5e0f4481bb11a55779bcf37d263523f5b7a7625511e7202236b0
   - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/o/openal-soft/libopenal-data_1.24.2-1_all.deb
+    digest: 5df3bf8c931299daf54f189352bb50878c4b7f81d68cdd3a40f366bda3d6fa0a
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/o/openal-soft/libopenal1_1.24.2-1_amd64.deb
+    digest: 22c0a4b3a51918afabfc82a10914e02c90f62e4cfde8c783a927d466799b5d97
+  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libg/libglvnd/libopengl-dev_1.7.0-1deepin1_amd64.deb
     digest: 178ad33f72e1905c6d777a680fad42295608be7a6f8f95dfe5f2f27dbfcd5505
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libo/libopenmpt/libopenmpt0_0.5.13-1deepin0_amd64.deb
-    digest: a037354a8429c3c32358ee745ab5dfe3d92cc60b74fa68d6355e8b63ce100fcc
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/p/pcre2/libpcre2-32-0_10.46-1_amd64.deb
     digest: 97811098f7fc09c7cf0f3e1b5bdd9812af8aa5793039e8b678bfeb8d57b9750d
@@ -466,9 +451,6 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/p/pcre2/libpcre2-posix3_10.46-1_amd64.deb
     digest: d4e0f487adebdfeb320945153d10ec21f094eb4aea3c806db768ab89f8da86eb
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libp/libpgm/libpgm-5.3-0_5.3.128~dfsg-2_amd64.deb
-    digest: b8f9b921c681e6c08abd8d452489762dc8ec3234e058407757f4f383ba2a01c5
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/p/pkgconf/libpkgconf7_2.5.1-4_amd64.deb
     digest: 9faa99ec2ae5dc678bde09299b6dde1c7eb5c5ebc27039abad8a626948119b7c
@@ -482,146 +464,164 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libp/libpthread-stubs/libpthread-stubs0-dev_0.4-1_amd64.deb
     digest: 8be922fba920a96d098288da4fa5f1d5dfb778b362d7a26ed738014305aa3787
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6concurrent6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 43205411162b0f239181a3a6dcc44a4e294140bd44cc934964a434fa7a5f09a1
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5concurrent5_5.15.8-1+deepin10_amd64.deb
+    digest: 7faee6e84636aa56ea4b13a2eb885cb78ef419baacadd04df26334fef9d70257
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-5compat/libqt6core5compat6_6.8.0-0deepin2_amd64.deb
-    digest: 6d467a1a943978f6f041698ee7fdd5a28eed45fb488d2f2713dc21c5d1367b80
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5core5a_5.15.8-1+deepin10_amd64.deb
+    digest: 9c271d6dd6f7a6596ed2b700d513c7e0b1171c10190a0e052dfca40878b314b7
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6core6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: c0be134bd068bd36045cc875b1a1243b21e39ad20427cca55b9924f3a37e17d6
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5dbus5_5.15.8-1+deepin10_amd64.deb
+    digest: 548ff230b9dea102165cd00be7fa4ebb1facc7aaaa660cb89e150a069b25b0aa
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6dbus6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 3729b1e05d00aa37817ed8f7bd91d516339258b3acd142414f90e5a217aa0e59
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/libqt5designer5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: 4a5823afcf787c7702883327f3a8ee2d678c4e6ffc9964d8b0dcac682ee789dd
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/libqt6designer6_6.8.0-0deepin3_amd64.deb
-    digest: fca05a0b5e2a9e79d70fb282e4fd5be1d8c0e5218bb359e5985c47a3d886905b
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/libqt5designercomponents5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: f4afbb2861bdbb083922dc434c3b469614aea3aa18e4056c3d61c7690fbac5eb
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/libqt6designercomponents6_6.8.0-0deepin3_amd64.deb
-    digest: a7cdf3370adfc03459761b96ea0701a32374981e41d875338cf21f68e32e31fb
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5gui5_5.15.8-1+deepin10_amd64.deb
+    digest: cd9608cfedddf7d2ef2783c10152cde18cfe71546a09be1c3cf41045046452c3
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6gui6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 233031b3511180302224005b4ae9b0498af1c14e7a7500c45816129d1abb1f14
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/libqt5help5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: 910e09a1756e13f68031763d197ba08e1aaee2d4131ae83a0ba04ab0013002c4
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/libqt6help6_6.8.0-0deepin3_amd64.deb
-    digest: 1c3db1f054f82d7c0957edb0e59a084a81a7c3df5c43357f479accbf9df075e5
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/libqt5multimedia5-plugins_5.15.8-1+dde_amd64.deb
+    digest: 05a5b504f7ff0cf5d36ee91b14e3086c4a4bb27e5c8378b8473fd8db10318173
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-multimedia/libqt6multimedia6_6.8.0-0deepin_amd64.deb
-    digest: dbc187ef7ae9fc30a2880002a2cc4bfa132f83dc7c2abff91b480bec6a8fd187
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/libqt5multimedia5_5.15.8-1+dde_amd64.deb
+    digest: 83793f792802995c4e3e45b908553880f7d9fd04a3568aeae9ef68f161e42df4
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-multimedia/libqt6multimediawidgets6_6.8.0-0deepin_amd64.deb
-    digest: d754dd297c4bd2b2a93ef7d7bec5b1929a8f06a6b35ded515e01331633d1204d
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/libqt5multimediagsttools5_5.15.8-1+dde_amd64.deb
+    digest: 24595ce8586a02dd1393c4dc1e4d576c914048e59dbfde991bd48c92b7f3c7ed
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6network6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: a968a0dec645fe8683e8a937b84f3f342c20098674b4825326a00e6e218f0ce6
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/libqt5multimediaquick5_5.15.8-1+dde_amd64.deb
+    digest: c664600b068ec03f31ebf51a699253305bd8b0bfe5d5fc8b145cd0eebd26f902
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6opengl6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: c8a307d4959fe62621702530005cfc9a29c3c69f611eb94f6990b44ab33f35d8
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/libqt5multimediawidgets5_5.15.8-1+dde_amd64.deb
+    digest: 4f60b615ed79569bf0ac297b6d396d6d592e6235002994ce438df566699bd321
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6openglwidgets6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: ee0016c76390753f2c6fd01a2f591a7df3c8e463a44a24a8fe701951285c202f
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5network5_5.15.8-1+deepin10_amd64.deb
+    digest: 4a3f5bbff71bd143b94b0f5d3a5da959bf588bc68db4ff6d3e374661d5df9a91
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6printsupport6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: b70b56c344e1124604731b826ffd2d6400559d722e22fa1293cbab2cf2781cf0
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5opengl5-dev_5.15.8-1+deepin10_amd64.deb
+    digest: 5e77207999ca0f2448f13c523485c26dcab28ccf5e4cb351de7f317be7d1cf64
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6qml6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 309be75708164e539840076de719547bf4e8d593169f3dd5e1cb3203f2a7c88b
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5opengl5_5.15.8-1+deepin10_amd64.deb
+    digest: 29344d358f9483f50b3578c84c2a9a1d94c223d89d7acdd3db2fc427f52dbe5f
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6qmlcompiler6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 4fcd335b671964c9c0e68f7cf6234054128e5b36c11bdf5bdeb4d129b6e4ebfa
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtlocation-opensource-src/libqt5positioning5_5.15.8-2deepin1+rb2_amd64.deb
+    digest: 5d46890c8d52531c962618e4a1d00f245ffdcaafb899861030aabf80d977ec72
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6qmlmodels6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 1880e8d6fd5fa08439bfc5622b76de3549f038a1d40b440c315c865c68fda829
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5printsupport5_5.15.8-1+deepin10_amd64.deb
+    digest: a4d13655f3abc7a39b7917b567e66b58225b6071056c73cf65e0448445d29371
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-quick3d/libqt6quick3d6_6.8.0-0deepin2_amd64.deb
-    digest: 824c7f5ea18c56c178f06c891eb718c939fc0a4d387dc55c048b4b234a21017c
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5qml5_5.15.8-1+dde+rb1_amd64.deb
+    digest: fb189ca01ceae14e684dcb75379889ca141ae420b7fc80958c13c1159b882926
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-quick3d/libqt6quick3druntimerender6_6.8.0-0deepin2_amd64.deb
-    digest: 48df47dc9dab619440be10b81db1a6d75c4e86a6f0b74b98f3d92f6cf97f3894
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5qmlmodels5_5.15.8-1+dde+rb1_amd64.deb
+    digest: 01897c1adae69e54793e68c6784f48bc5c2c2ca99e1949027c1a2851d670e336
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-quick3d/libqt6quick3dutils6_6.8.0-0deepin2_amd64.deb
-    digest: ae1f26a30324396caf7f9b2bfe6194610e91d719d9a2b2d53be96426ebb553ef
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5qmlworkerscript5_5.15.8-1+dde+rb1_amd64.deb
+    digest: e51c9f72b4101c3484c16cf6d08b078138560eceec411b0312df40c2d72f9576
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quick6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 7204015dd032f728e12a34e0dd541283cfdcef4ce286a26b2ae57504ab610f00
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5quick5_5.15.8-1+dde+rb1_amd64.deb
+    digest: 2280daa66243378cb660b5fcb140479a50ce678d07148c1b1b242626667fb759
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quickcontrols2-6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 775e7ada7e6e651e934502ed797ecbf31a0030954a7c29c6e0a0e8333908d3e7
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/libqt5quickcontrols2-5_5.15.8-1+dde_amd64.deb
+    digest: ec15d7fd17982fa59f0d90def82a04ec02935a95578f598ca5ee079dcdd7ca8f
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quicktemplates2-6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: beee40eff01626093444d724b34785d3a7a812a4b018495ff89f0975676b4471
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5quickparticles5_5.15.8-1+dde+rb1_amd64.deb
+    digest: 08154c9ee59e2fc78a3402b0847c3022fce2161381ac77145735763f734176bf
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quicktest6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: a22327a40f6c39c110e45ad9f05b06d537520787661398aa36029cde23ed3cf9
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5quickshapes5_5.15.8-1+dde+rb1_amd64.deb
+    digest: aec84702cda87c578bf0d3407aa2608efbd05cd522d1ff5da24ae691ecf39d37
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quickvectorimage6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 4d9db5038c039a6856e4c8471036ae8a1080676ec379bb1cf5900cac9e4a3c2e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/libqt5quicktemplates2-5_5.15.8-1+dde_amd64.deb
+    digest: a3f498260f8ad59c4a6f76cf5aa868509c6560bae8c773ef12f2c6a441240c6d
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quickvectorimagegenerator6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: c82e7280c8e2601c8cb86ebe0b07197dea825df6bf9b2c91f21102858c65e121
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5quicktest5_5.15.8-1+dde+rb1_amd64.deb
+    digest: 2062928af6356b8f2ca8c0e5799ee72fc52a2c444acf6255a3b5e3859984240f
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/libqt6quickwidgets6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: daf52e5eff9e1cd882e5bdff29e2ad5734eaddbbb9cab29b6c353e3fa6554410
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/libqt5quickwidgets5_5.15.8-1+dde+rb1_amd64.deb
+    digest: 9ac7653996e537a47dffba73335f363bd1ab5623a7dd17f4b70d61248567e688
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-shadertools/libqt6shadertools6_6.8.0-0deepin2_amd64.deb
-    digest: 49a7c22ef19dd7aa650742c226c32a2f52b80b6501e96e79fecd09c108c5eebe
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtsensors-opensource-src/libqt5sensors5_5.15.8-1+dde_amd64.deb
+    digest: 615aeb1b2116860b50ddf8a67667be0314ef38ba0d22063b688438f94a577372
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-multimedia/libqt6spatialaudio6_6.8.0-0deepin_amd64.deb
-    digest: 73c0e26ebd541bd02158cf6265fcc55b16b7148f9db0a4130b7d7bb50a83978a
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5-ibase_5.15.8-1+deepin10_amd64.deb
+    digest: 6fe03c1967da93fc8ef73ad16394d9c31c10391c24954899b050284ffc5aac0e
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6sql6-ibase_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 17fd3ed3a5ece24906b2158067b48dfc9db796542cbe5c9f49cbb9ed2f8fb367
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5-mysql_5.15.8-1+deepin10_amd64.deb
+    digest: 10e7d38017bbe93c989c199568161c09032812c66cdc8694a5b6332e553ffbfa
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6sql6-mysql_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: b752f0fe9d1614083db9278c67b9c04253167ecf38ced1c20e3d79e83fd31aa0
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5-odbc_5.15.8-1+deepin10_amd64.deb
+    digest: eec84270e97329c8c6a31d1ca9ef282d413300f1bc78a58b4ee2341cc5c93323
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6sql6-odbc_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: a1024b774b3dc7450937af4ed6e9d20990f718618f266328ce25c9c82af6ceab
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5-psql_5.15.8-1+deepin10_amd64.deb
+    digest: 8b0367a8938a862d0c5fbd530442c1d5d3edf660a6c3263a2a8803415d922601
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6sql6-psql_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 8a9eeb2a6ecda54c1a6f4325221a048328a16626b706104222cda8f10af31f25
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5-sqlite_5.15.8-1+deepin10_amd64.deb
+    digest: a9bdbfeb458888feb727b6a05c0fefcd585c19e1480442520e4b4ef4cde54705
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6sql6-sqlite_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 83140d171bcdd6e389c9755cc6d35af8713110ab6ae4cc1ade112c293e238ead
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5-tds_5.15.8-1+deepin10_amd64.deb
+    digest: 162cc564ad0fa6f96efa8e82d07db281f5c3005132d9cdd9e8728007763bb280
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6sql6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 4262e718d53a3bd1d89fe10de89c8f5ca3544e7d914e7fb79b6efa30035f1d45
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5sql5_5.15.8-1+deepin10_amd64.deb
+    digest: 4065bca90f778dfd5e892603c5132e6e3e1a7ba013034a5231c06f3d8f62a72a
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-svg/libqt6svg6_6.8.0-0deepin7_amd64.deb
-    digest: 9e00fcbdbbbe06ef4c10db24073088c3bea9f99a0406dd4ae5cc5e5dfacb08cd
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtsvg-opensource-src/libqt5svg5-dev_5.15.8-1+dde_amd64.deb
+    digest: f97d037d9d88faca8e449c8a512f57ea0c5e23ecf223a915635fedf3004299d9
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-svg/libqt6svgwidgets6_6.8.0-0deepin7_amd64.deb
-    digest: 45013c5561e57d387b707d720424b14344b5d59645a9f3a72d38dab6dfa9f0cd
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtsvg-opensource-src/libqt5svg5_5.15.8-1+dde_amd64.deb
+    digest: ec01534caddc2130f4c8570ac5a74218a6f98ca25852a203288556a141bfe7ca
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6test6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 16a0266ba122d0e8941c6ce64123202883a7cadd7e6bbaa0954d83348066f2b0
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5test5_5.15.8-1+deepin10_amd64.deb
+    digest: 7f1614d333ea008f2c0eb0d95a6cfc95e8d6b5f2bea91a7be4c1e64060e07267
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-speech/libqt6texttospeech6_6.8.0-0deepin1_amd64.deb
-    digest: b31569eb5340aa263ba7d526406c50d7877c94031bcfe9a6da22da6b794a934a
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtspeech-opensource-src/libqt5texttospeech5-dev_5.15.8-1+dde_amd64.deb
+    digest: 1d61aac150c996bdbb9e08d59da12f222f8d594218de98a6cef0aa5828468ce9
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/libqt6uitools6_6.8.0-0deepin3_amd64.deb
-    digest: fccec1dfae75e5e95ee0c23f7b705c78e84c9646bbb7e2f929ae1bbfbef6e5a9
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtspeech-opensource-src/libqt5texttospeech5_5.15.8-1+dde_amd64.deb
+    digest: 0fc5b08913a84d47e01a88636b657baf386edae9a2c83f3694c2d7f66c03f92c
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/libqt6waylandclient6_6.8.0-0deepin16_amd64.deb
-    digest: 366bf18373346dc4e679634d831a124a09a885c1c19b4fe5fcdffc82b567a680
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/libqt5waylandclient5-dev_5.15.8-1+dde_amd64.deb
+    digest: 58a1aba0b61bf1bd418d53466cbfce0fb3abd5d0da484f6e63346b51f1fca54c
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/libqt6waylandcompositor6_6.8.0-0deepin16_amd64.deb
-    digest: 25573ae3e7545009ec9ce920c7508fed6009578fa829e5ed3704288c740016a8
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/libqt5waylandclient5_5.15.8-1+dde_amd64.deb
+    digest: 736b5ba7f773a36bae3e497bb21064e12ecfbb25401f1f183ef4f0f7e2af1f59
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6widgets6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 510ee2e9c67b364988cfb216e2a2a7cfdd68f5c83f04197567b7f2f3b5c69cc2
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/libqt5waylandcompositor5-dev_5.15.8-1+dde_amd64.deb
+    digest: bb7754cf72d94d56832ac724eed64b3f29631511699e5935455be0e67bcaa2a4
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/libqt6wlshellintegration6_6.8.0-0deepin16_amd64.deb
-    digest: 0f4d98f0cc8ddc32916506ab9181158282204c8c38af02914ee12b10fb9203c6
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/libqt5waylandcompositor5_5.15.8-1+dde_amd64.deb
+    digest: 06d02a00fb7dd93710e14d04cd2d7afd523ffa3d0ba28e7ae477b9f2cbba5670
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/libqt6xml6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: a6f4d9145b28f05a563c11e56e5b467ec94328a501abe2536701b0c702ee2586
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwebchannel-opensource-src/libqt5webchannel5_5.15.8-1+dde_amd64.deb
+    digest: cde95e06363ff244cb0d2f988a8d0d3f041d48cc7c03d74826b0ac096d824636
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libr/librabbitmq/librabbitmq4_0.11.0-1_amd64.deb
-    digest: 4b74d4425bcb1d23d7763e62cb1c9f2be712d9f92e46542151125ba96d623164
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwebkit-opensource-src/libqt5webkit5_5.212.0.4~alpha4+deepin-3_amd64.deb
+    digest: 97259a37c76506f5f7b324f119d738c7d738f5f4b0f431daf267de6b56713327
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libr/librist/librist4_0.2.11+dfsg-1_amd64.deb
-    digest: 620c2049aec638274e02b3cfaac1398e1f67a6a1a76fcb13383542eb4637648f
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5widgets5_5.15.8-1+deepin10_amd64.deb
+    digest: 749fc2c12ce2621ad8ef40cb7da61fdaebb785354b09129a90819f6d64249f9c
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtx11extras-opensource-src/libqt5x11extras5-dev_5.15.8-1+dde_amd64.deb
+    digest: ce4125aace1ba126e015c9e38b3224c2f7a6890695c80fbe3649c1b7b5153813
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtx11extras-opensource-src/libqt5x11extras5_5.15.8-1+dde_amd64.deb
+    digest: a32b7bc6291e8c0812e0fc46b40bf209b679e7e291b716d5c5e290775229e763
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libq/libqtxdg/libqt5xdg3_3.12.0-1deepin1+rb1_amd64.deb
+    digest: 884adac238f2fec89a00d1771f369d295818b0aed3b8b747c9f8ef22586db3d9
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libq/libqtxdg/libqt5xdgiconloader3_3.12.0-1deepin1+rb1_amd64.deb
+    digest: ea19fd09324682c9356f3c19602fb5752237c0ba2d788f6d872ec2526fb7d2ed
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/libqt5xml5_5.15.8-1+deepin10_amd64.deb
+    digest: e59f915d2792a9907aea99f982a682057bf79e14578d1769e4a7bd66c4cc8001
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libs/libscalar-list-utils-perl/libscalar-list-utils-perl_1.63-1_amd64.deb
+    digest: a581e573596930e2271628421ce0cc14f66c2a4fb0a4910065ce2c63192647a4
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libs/libselinux/libselinux1-dev_3.5-1deepin5_amd64.deb
     digest: f7dfdd9e463828cff8e624ceda7f13cc68f2c9d2e72b27dc7e7315e1193b7d92
@@ -632,26 +632,17 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libw/libwebp/libsharpyuv-dev_1.3.2-0.2_amd64.deb
     digest: 7af3357f80d57fdc31a26596f9e93f0218a625929822228d312498cabdcea72e
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libs/libsodium/libsodium23_1.0.18-1_amd64.deb
-    digest: b16ee914acaaad0cb1c062370f30934b76e401350bd531d169e5838927c4da30
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/spdlog/libspdlog1.12_1.12.0+ds-2_amd64.deb
     digest: 44381cd9ad35fa6ffa7a0b3e27611011602bb32093efaf0c80117dc9f97a371b
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/speech-dispatcher/libspeechd2_0.11.5-5_amd64.deb
     digest: a5b9b34ea8699849e17a2e4c7428f5dabbda217a85ca9f2cc47e4ce6e0d250b5
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/srt/libsrt1.4-gnutls_1.4.4-4deepin0_amd64.deb
-    digest: cda4bbbcedb3ddd9b6722acabb811b95d1a6573a60ad7e6fedfbccac843bf8f2
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libs/libssh/libssh-4_0.11.3-1deepin2_amd64.deb
-    digest: eb94cc837c3980e90b453500a0b000e2c79eefed65a409efea98b10758ecedce
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/startup-notification/libstartup-notification0_0.12-deepin1_amd64.deb
     digest: b0e9783da04f53ba8da97660523021322c4477059c63d3684fab283b7f9aef9c
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/ffmpeg/libswscale7_6.1.5-0deepin3_amd64.deb
-    digest: 4c6a46aa4400d507ce8c28e12cceb000dbc16b3df8ce7d8495e00d29f47a5e6d
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/f/freetds/libsybdb5_1.2.3.1-deepin1+rb3_amd64.deb
+    digest: 1b855a2b890c1bc1320d90292e0ca1b508c6a0ba826b4e4e31199e8fc895eb39
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/sysprof/libsysprof-capture-4-dev_46.0-1_amd64.deb
     digest: bbaacdcbf341e500cd8fbe0dfb75fc98156b0a5abf94e43105bb5f745c3168dd
@@ -668,17 +659,8 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libt/libtommath/libtommath1_1.2.0-6+deb12u1_amd64.deb
     digest: 1da0a72adec71588a6ac641b6f60ce39aeaeaf6771bcd2386b7dd33ad49b0548
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/t/tslib/libts0_1.22-1+rb3_amd64.deb
-    digest: d7c7fffd808cd0b765d2287b98bea752d740994788dbf90de6db4f9710e41162
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/systemd/libudev-dev_255.2-4deepin31_amd64.deb
     digest: 0391fddbd76653e834bda84d4e7b00ed90a7c1d6501432c0881f27de289fa99c
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libu/libudfread/libudfread0_1.1.2-1_amd64.deb
-    digest: 5ebb4a61642a553212842e52f9bcca0bcdf2fa47f95d8d1a4b30d6096dbda8e9
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libv/libvorbis/libvorbisfile3_1.3.7-1_amd64.deb
-    digest: 50a8cfed14d73f5e15fe13de7faae7d05b5e3a5afa79bac1ed373cf8487213a1
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/v/vulkan-loader/libvulkan-dev_1.3.296.0-1_amd64.deb
     digest: 24e268d97e22c4ed71c91201fb5d54f8b4b8689cccd032f11bb4faa1143bae04
@@ -692,17 +674,14 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libw/libwacom/libwacom2_1.12-1_amd64.deb
     digest: 2e0eb22e108ff3de178a570dcd21ab3d6cc16f6baf94bec37595008786789280
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/w/wayland/libwayland-bin_1.23.1-3_amd64.deb
-    digest: 452bdd1fa61105c0e7a8aed8afbceac7a3c3cc07983ffec146f77581f48ac713
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/w/wayland/libwayland-dev_1.23.1-3_amd64.deb
-    digest: 475c2fc3207e28a3d5c54b81b313b00222fd52042fb2beb3cfe7814dd40bceea
-  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libw/libwebp/libwebp-dev_1.3.2-0.2_amd64.deb
     digest: 0c60cd19f18fbd0cf299480c7e7cfcb7451e6b1b05dc8f2d5cae1cd248e4bc5f
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libw/libwebp/libwebpdecoder3_1.3.2-0.2_amd64.deb
     digest: 26d6ff4ed6bf1da7fe3eafe2514ef5c04a8792381b35e3bd3745fab1b6347246
+  - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/w/woff2/libwoff1_1.0.2-1-deepin1_amd64.deb
+    digest: 92a25161de8298a529c3e8158ae21b4343c513e16cac6946a0ffa1166dba72db
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libx/libx11/libx11-dev_1.8.7-1_amd64.deb
     digest: 93ec6c1345900f791549c12440757ba08e756379278bd6fe5133e6690c544621
@@ -716,17 +695,17 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libx/libxdmcp/libxdmcp-dev_1.1.5-1_amd64.deb
     digest: 3ddced0df55f49a1a83f663c94dc99af95580104cef6bc89fed65c9da7bc5199
   - kind: file
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libx/libxext/libxext-dev_1.3.4-1_amd64.deb
+    digest: abf2287250a9b7e702206caf639010502989cbad54709894d5e26aa4149a76a9
+  - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libx/libxkbcommon/libxkbcommon-dev_1.6.0-1_amd64.deb
     digest: fd7cb0bb0dc64c7417a6418bdf4d67145947902d5dd668eab4949811b170ee51
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/z/zeromq3/libzmq5_4.3.5-1_amd64.deb
-    digest: 6374362f4defd2e6a454b31a8fe8e407aeb5558c4cacebc6a97a3c9d7f639e18
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libx/libxslt/libxslt1.1_1.1.43-0.3deepin1_amd64.deb
+    digest: 97f281e7fe3bff382ce105326a06ff4b4848e3addcd5fb729c86b5673bf345eb
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/libz/libzstd/libzstd-dev_1.5.6+dfsg-1_amd64.deb
     digest: 92ec406d537e08271b66dbcf10d5730fff8eee067379c9fce7e74e4c53c6b4c3
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/linguist-qt6_6.8.0-0deepin3_amd64.deb
-    digest: f7102c09d7ca6cf19598b0901a46799ed935bd3278323121b11360f38dc48c9f
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/l/lsb/lsb-base_11.6_all.deb
     digest: f8bedd167280e76636df3a1bc023cd2906d458916c1af4c1d7912c5b971fc642
@@ -761,218 +740,191 @@ sources:
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/p/python-packaging/python3-packaging_25.0-1_all.deb
     digest: 4b0fffc886401daa9acfb53e2b190528e3fad37a49b989c4fae6715004fda41e
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/qdbus-qt6_6.8.0-0deepin3_amd64.deb
-    digest: 3f6d07590c1e8957fdc76082f19363f1fa8e5fcf94f7ae1bada4afbab55eb92b
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qdbus-qt5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: f588a4e98d9750b2e517e8a2b86740e557e207d9515619239bfea8d436acc940
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qmake6-bin_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 04e361c9b7d7e4d7a18070af41a4e3243fcb86e5e44ad6165fcda945c1019f42
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qdbus_5.15.8-1+dde1+rb1_all.deb
+    digest: 5792fe7927d59934ca4e6d0cb68c8966df98b05e554e7568d3121137a18883c5
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qmake6_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: a22de2871b1780ba6c45054dff08bab2391f1705b6a69d09ca881580e3197141
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qdoc-qt5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: 4ba9b4e263cfb288a76dfa830ff3fddb28fdfb426f5a9d48144dda7784a9c3fb
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml-qt6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: b2e62bf1d9951b4129f3f699f79d690423f06cdbac18f72e83286fb5d8c22e21
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qhelpgenerator-qt5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: fda6b397e426c140b9b4a47221b432c911b00453c1a7c121962803fffccbb22d
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qmltime_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 10a8c90c9b4e4d8d2ed7124c3fd7c9c0a5dd92ebd85a2a564ce6f4522abac2c4
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qt-labs-animation_5.15.8-1+dde+rb1_amd64.deb
+    digest: a2d46b676d06186af051953ae3cadd997b6708bfcbd418336e375346b8e339ae
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-animation_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 761a4ef12143a74416e5276be6e76a9b8b46405e36180c654c07017f0d36592a
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/qml-module-qt-labs-calendar_5.15.8-1+dde_amd64.deb
+    digest: 180affe740b1b9b0c7bb97709194379297e2493fa7cf17a98500bdffecfb53f6
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-folderlistmodel_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 441c24c89cafe95a5866c663aadd954fc48464eb437b508ca5daba6fccd2f2a2
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qt-labs-folderlistmodel_5.15.8-1+dde+rb1_amd64.deb
+    digest: 1de4127c7d9854d473b67006602a353f935c3c16677487acab5e1c226d338098
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-platform_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 1e3194856b5b51535bbd743fa3b66173dc174d2e38a2ef61d2ca5af09c320787
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/qml-module-qt-labs-platform_5.15.8-1+dde_amd64.deb
+    digest: 4aa8ca513ad521b001c6ccf19551f9f652da5aa8f9432e8fcdc5e92290ab8a66
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-qmlmodels_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 782ac62f84a6480880f803d5749159940d18dd8e8d6f27e0d7685f051322b341
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qt-labs-qmlmodels_5.15.8-1+dde+rb1_amd64.deb
+    digest: 8751a042d14196be49841eb87e74062ac71ac50e8781a0ca54e76d5257d8264f
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-settings_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 593a391cb71f8d30205fa6763c3a5729f09db76513f617ee03b9a85c64827e5c
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qt-labs-settings_5.15.8-1+dde+rb1_amd64.deb
+    digest: fb3b6aca0c3714a651306e2019b74b65efeb798fd4af1081ab4acde121b60e5f
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-sharedimage_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 1119ef1440551fc272e97304f779832cf8c7ea3a48a72a37fd7f3e1504f398ee
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qt-labs-sharedimage_5.15.8-1+dde+rb1_amd64.deb
+    digest: b9ac979ee3400b4e7ac03f8ec7a54a6dfc1bba289a617f867a5f4d1e3f91139b
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qt-labs-wavefrontmesh_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: bc9c56183155441994feee43ddd8d5be5e61782339a58153b89563517b6e9fdf
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qt-labs-wavefrontmesh_5.15.8-1+dde+rb1_amd64.deb
+    digest: cf5de89a3d68294f5008b42532b9c31c4a5f898bdaa543ac6c09abef9ba28ed7
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-5compat/qml6-module-qt5compat-graphicaleffects_6.8.0-0deepin2_amd64.deb
-    digest: 77bc2ad06dbd6abbc605619c7df174ef6ea037edde141c80f4b370691534bdf4
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/qml-module-qtaudioengine_5.15.8-1+dde_amd64.deb
+    digest: c4654012c723cfeac65f596efe774efe9a6204d477d20419fb2dbb624daaef3b
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtcore_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 84d233275b454f45f8196c65ee981dc0cdbf81d9fb5352c790a422c84d4bacce
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtgraphicaleffects-opensource-src/qml-module-qtgraphicaleffects_5.15.8-1+dde_amd64.deb
+    digest: 01cb2910b13af636855d26c1c62303f5293d2ff1221e6b222760ba74f1a6c32d
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-multimedia/qml6-module-qtmultimedia_6.8.0-0deepin_amd64.deb
-    digest: 3c7e5c7b9970e4d65a36a8480be3572faf88247c25e6885c46232042fb131cbf
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/qml-module-qtmultimedia_5.15.8-1+dde_amd64.deb
+    digest: 853a689433c5e9e59c8218e3baf2e370ee79b14aa917a213921144eb1f0f2127
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtqml-base_6.6.1+dfsg-1deepin7+rb1_amd64.deb
-    digest: f97ace68363e7bacbb9ccbea0e581efc04fa2bbca15a0f520e8ee2fe84ddea53
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtqml-models2_5.15.8-1+dde+rb1_amd64.deb
+    digest: e3684faec8f106c4c92ba2b7f17940122bd66b378994d6405339f913d0d17d23
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtqml-models_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: f361e98e5a0ce55002b88fcb0b2e2b4265b29357ef95cdea5f56e5b761e8027e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtqml-statemachine_5.15.8-1+dde+rb1_amd64.deb
+    digest: 0a3f856793c82b5d5e11046986206bb45e548bd37d2c8611044ee50a0321763a
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtqml-workerscript_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 3281f0a064ee49ae62213a718bcc3e377a0578088cd6b9f11d5634df9e7f2855
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtqml-workerscript2_5.15.8-1+dde+rb1_amd64.deb
+    digest: 2f321abf793494ef8ce66c176fa14dc98fd44c5bc92187b4ed918cc186cb45a8
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtqml-xmllistmodel_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 6256a5798159640b2d4badd181242edec7a3994a55af5fd9dca174683a6b02f7
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtqml_5.15.8-1+dde+rb1_amd64.deb
+    digest: 21331a20632054a8623979ad7362051cb4f42a74a8513f0b25d629d453af7d7d
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtqml_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 26d637132dd4564b804e20ec14f70c537d287df91cd0a8855c08dab1265b4c00
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/qml-module-qtquick-controls2-styles-chameleon_6.7.50-1_amd64.deb
+    digest: eb2c393165c81f3a3ec3fdbf8070baece986418e14187457c184ed08bcd4832f
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/d/dtkdeclarative/qml6-module-qtquick-controls2-styles-chameleon_6.7.50-1_amd64.deb
-    digest: 4cb1414d83a61a82ac90b280c05b95b295d46ccc653ce33c833d4615f7f1b748
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/qml-module-qtquick-controls2_5.15.8-1+dde_amd64.deb
+    digest: 2246e190123d22b96f6c5ff22fc6683cbef1e64284fcbb4808805f4d53a6d1a8
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-controls_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 39b90887f71b4cc5324d684dc3a9d895b0da1897e3c8a1d3384f0ee04e8de1be
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick-layouts_5.15.8-1+dde+rb1_amd64.deb
+    digest: 513ac017cc9db239120043458104f9d8a99c04a908b4a8843de157139d4d1bcb
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-dialogs_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 12f69f38f6398886fba8523f530b682b6e677510695d784e766b68be60930ef6
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick-localstorage_5.15.8-1+dde+rb1_amd64.deb
+    digest: 942f5504ef245eefd9a62ab5bbc7f7f53484486935d349f2982cfbd9d8484a74
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-effects_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 4bfc5180b49fd0232c319e3d59b25289bb9d183085e3629d6f58f95bcb197d5f
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick-particles2_5.15.8-1+dde+rb1_amd64.deb
+    digest: 09a22d23121f4e38b1d1db78c430c6f4e8dfb86a5a2486c22ad6753928999de5
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-layouts_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: e0b21b2d16428a7e3405c991c9e6ee433f350bf9c26d7f4e9bb4f5ac8c8e8840
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick-shapes_5.15.8-1+dde+rb1_amd64.deb
+    digest: c7efa2e74cea7edefbb362a0efcdca408de31adb4e0b0c8a9c525e40516135bb
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-localstorage_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 1d983e5ec11ad812ca57f2f7eb55968c0bd07bf3b97a77239e6267dd22fb2182
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/qml-module-qtquick-templates2_5.15.8-1+dde_amd64.deb
+    digest: 79fc0e21b969daacb4f8db46c5acb499041d2cda3e3deb799b3df37d98e59215
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-nativestyle_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: d56ed289a598b646555be4657cbafe87737d7c1225d32162efc01c2fb9ee73ee
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick-window2_5.15.8-1+dde+rb1_amd64.deb
+    digest: 37e9ada7a22ebfbdedc17cdb3a94a43830598efaac1d15fb53b4f73b420ca509
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-particles_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: ec9232c852f49bdb44e157efc4ff9e547c4ed343bde5f7b31e2ea25a4a97291d
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick2_5.15.8-1+dde+rb1_amd64.deb
+    digest: 1a99de15c31fd4640944a3a86bdf8b2320379cfaf850086b5619157631b6dbb8
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-shapes_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 768b84ea943560df48c4a74d742485af1626a923d477404421dfc0e39d581aa7
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml-module-qttest_5.15.8-1+dde+rb1_amd64.deb
+    digest: ae30018c808778889fbe10bb8ff2396f7ff017683bbbb0e70f5464a2a53a00e4
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-templates_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 5c41732336873ecb101f303869e9d591c49915479e16927fa1b8988173a33564
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/qml-module-qtwayland-client-texturesharing_5.15.8-1+dde_amd64.deb
+    digest: a25f48ebd5248574ee9bf51835e683fd6eed2ed24f68737ff57ee61e431a1275
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-tooling_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 8266217fbdb7ba47cc9d5a875e45c4f4626e4f5ac0d02f4640e2bc688b9596fb
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/qml-module-qtwayland-compositor_5.15.8-1+dde_amd64.deb
+    digest: 7313b2f0fc2501c9050279e014a3bf38a920627dc0c36a65da4747ff703eb1f3
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick-window_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: c96b7436ff0061c04f427cb18b2140c3bf5ba597fcfe7fe11228e68f08f475d5
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qml_5.15.8-1+dde+rb1_amd64.deb
+    digest: 60006635d74fbb6b61999e3fae3c071cb20553ba73cf22390b80806f09ee44a7
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-multimedia/qml6-module-qtquick3d-spatialaudio_6.8.0-0deepin_amd64.deb
-    digest: 172fd1eead6e3bff1e2c19e5b6a42a6979ccb7600b2d7ac2a81cf404a1c351b1
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qmlscene_5.15.8-1+dde+rb1_amd64.deb
+    digest: 7a2c5f2e90e5c33f1490dc8d6a6ea5b2b7a8e5ce4366ba847dc331ed0ff8bdda
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qtquick_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 1d02f68e0651eda167d03771d5995184d593fc8c058878fa56e567b1ad6b3bb9
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qt5-assistant_5.15.8-1+dde1+rb1_amd64.deb
+    digest: e8846d9b594624b0acfb97878e5d4c4678bf22a96f03f679909784c034f4edd3
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qml6-module-qttest_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 46e5193806f63c45b399b5f90bdce75440d35effd3ea89d07ca0984e7e64acb8
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qt5-default_5.15.8-1+deepin10_amd64.deb
+    digest: 4d5224ffd5f247efafad08f66ce7507d40d8f0fa0707c1cf409c59376b27096a
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-speech/qml6-module-qttexttospeech_6.8.0-0deepin1_amd64.deb
-    digest: 470f392ceedbbb90b4f889aff6987106e864db604833e0fa3bddd61baa93f3ab
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qt5-flatpak-platformtheme_5.15.8-1+deepin10_amd64.deb
+    digest: 3143b5419239393fa0777d8129bd4f9c45197c6ffd732116add9c92956450bef
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/qml6-module-qtwayland-client-texturesharing_6.8.0-0deepin16_amd64.deb
-    digest: 26d729437adda5ae6928e78fcdad09e163617581864af6dd9c8b6d38784ecb25
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qt5-gtk-platformtheme_5.15.8-1+deepin10_amd64.deb
+    digest: 28709eb37a66606416c05c591425a349ceae73503d900d4fb7c038e354559be8
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/qml6-module-qtwayland-compositor_6.8.0-0deepin16_amd64.deb
-    digest: 30a4296d88bbf6e0502e856c5d2430d0ac0f535dde44120957c24bff63202ece
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtimageformats-opensource-src/qt5-image-formats-plugins_5.15.8-2deepin2_amd64.deb
+    digest: 842fbe1974a391c3047c5e7adf4319c088cc091d530bd0d2c85c3be49f990371
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qmlscene-qt6_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 06428d663a742cce09abc41c5491305aa16bc729b8013029a1aa17d4d4f9b342
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qt5-qmake-bin_5.15.8-1+deepin10_amd64.deb
+    digest: 981ae7147b776975970e97529ae1334905b5f38d035cc98ee65ff7892dbc8390
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-5compat/qt6-5compat-dev_6.8.0-0deepin2_amd64.deb
-    digest: 5774169e9ac099e3b38d4f97aea19b47cb407192a5961f6f42719cf1038fbf89
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qt5-qmake_5.15.8-1+deepin10_amd64.deb
+    digest: 8b3d35a6c76f464dc859901519152b45fa7988687bf6543edbdcdca3c1d32c10
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-base-dev-tools_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: f8d25d8af63e416f352ede3c145ff35cb9a450307e97352d3b9dae272615000b
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qt5-qmltooling-plugins_5.15.8-1+dde+rb1_amd64.deb
+    digest: 2a8c675d7c19f1064a0d8ed67be43fb326085b3b5a9244030b7745ef808aa624
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-base-dev_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 36dfeb06dd7bd292e8522dcf47d9b8884642c08512ee83c0bee4c6298708087a
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qt5-xdgdesktopportal-platformtheme_5.15.8-1+deepin10_amd64.deb
+    digest: 41978c16e252cfbdff94c2f8730f10aed0e42b09c71f8dfd6815fc5e0288c2da
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-base-private-dev_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 2cc73c76f9cb16c4b6fa332c806175538430391866f856b3f4763e5a16d69499
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qtattributionsscanner-qt5_5.15.8-1+dde1+rb1_amd64.deb
+    digest: ade5a43d69474f025fac65f51b52fbbead82558e077165e2b96102be60e43402
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qt6-declarative-dev-tools_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: a191edec58e1570ae79286f859716a4641e23a4f8ef99bf2cd263074e3833c9e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qtbase5-dev-tools_5.15.8-1+deepin10_amd64.deb
+    digest: bbc0111d9e968c19b82d5aa9d11513c7fdf5f6da23504a06428e71c88be029c2
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qt6-declarative-dev_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 46c64e8c21ff5f25f4966eb27ce301ba59bd72e2eb74565f3e75aed3ba99086e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qtbase5-dev_5.15.8-1+deepin10_amd64.deb
+    digest: 091b432b783770d9aaebb41152172d50083ff2a714b47dd6f3c5492252bc82d8
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qt6-declarative-private-dev_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 25119398383a899a328cd93b0b0f98bd12746caa39272c08e5cc5bb53cf58679
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtbase-opensource-src/qtbase5-private-dev_5.15.8-1+deepin10_amd64.deb
+    digest: bfcc025e070ea1d289c18e8f924e6db6380eec95b0eb7a7c57596dc7601fee90
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/qt6-documentation-tools_6.8.0-0deepin3_amd64.deb
-    digest: 9e89f44e0c10a9e499487387a568a1690e46d77078969070fc0e1368a49180c6
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtchooser/qtchooser_66-2deepin1_amd64.deb
+    digest: 4371ac46607bdf3176b039867f718c9e6fb48df3440c2b4397d3b2e6c08039d7
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-gtk-platformtheme_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 0d1128d78602eca3942749f4a3945d41f42076d789d9f5a40e791e88db410d00
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qtdeclarative5-dev-tools_5.15.8-1+dde+rb1_amd64.deb
+    digest: 035693f6c75d07419b7ad5b93f734db64218100bde864d58c7111d039cf08c60
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-imageformats/qt6-image-formats-plugins_6.8.0-0deepin3_amd64.deb
-    digest: a2fe1a039f7c51c09fd16456ec021e19f7140b5e4ebe857a0bfeee6d2c250011
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qtdeclarative5-dev_5.15.8-1+dde+rb1_amd64.deb
+    digest: 0acb50b9232475037c3918688e5c0c6e92e12d699a0f24fe84c85903840f1b57
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/qt6-l10n-tools_6.8.0-0deepin3_amd64.deb
-    digest: 9bb6be934533f5c98bb8f7b1f960741a2897824cf504ea93f80b9fc2b102fc34
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtdeclarative-opensource-src/qtdeclarative5-private-dev_5.15.8-1+dde+rb1_amd64.deb
+    digest: 5402fc943b5a312e3344b9d1522c9ce2f5b045528b06813b3104cb8dc2de30e8
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-multimedia/qt6-multimedia-dev_6.8.0-0deepin_amd64.deb
-    digest: e49d551b49772f35ea9a4c524e58b523dea5c665b6ad96383da54a4ee9c7058d
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtmultimedia-opensource-src/qtmultimedia5-dev_5.15.8-1+dde_amd64.deb
+    digest: 770d632f65445463f5f2aac48aacc8d4a00c6dc27ce1e8f3c460c88604b72ec7
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qt6-qmllint-plugins_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 3ab3f83c80c12cb7ca4781a781043c596e1a8d958d843caaace4b8288c4f09b8
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/qtquickcontrols2-5-dev_5.15.8-1+dde_amd64.deb
+    digest: 6c4c0a4e9bb65364db2569a662e5895e1191254ef6fdd111da21eff9e9222985
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-declarative/qt6-qmltooling-plugins_6.8.0+dfsg-0deepin17_amd64.deb
-    digest: 27c7bf70d2cf95a312792cb25e5fc49c2a815936244a69d72f30d18435fb94e7
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtquickcontrols2-opensource-src/qtquickcontrols2-5-private-dev_5.15.8-1+dde_amd64.deb
+    digest: 8e30dff5d32a42e4acc3050c74fc20fc2af9c10bf9d5b17f3df6703abe1edfcc
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-qpa-plugins_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 08aeabd6b04ab5de901aecae64d87faa38060ef06b00eda93d74b96bd8a344a6
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtspeech-opensource-src/qtspeech5-flite-plugin_5.15.8-1+dde_amd64.deb
+    digest: de0fa9cd002c4ecfc2e07f8e0c73a1b5fe062df7f5009f9ad73b0da9eb3e7051
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-speech/qt6-speech-dev_6.8.0-0deepin1_amd64.deb
-    digest: 2405851738c3c42a35667a20efebc0830238f8e1cff38775dfa28edce61981cd
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtspeech-opensource-src/qtspeech5-speechd-plugin_5.15.8-1+dde_amd64.deb
+    digest: 8462dfd439623d3261b77a7a44417c99c5cde378e63a1cd945b11518dc5d06e1
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-speech/qt6-speech-flite-plugin_6.8.0-0deepin1_amd64.deb
-    digest: 2469decd9f0021993e7c4f3df79c7eaef7257cdb9a99ce1f208a57446dcaed0c
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qttools5-dev-tools_5.15.8-1+dde1+rb1_amd64.deb
+    digest: dc8df23c71a3df882a85e73d91a03c000bab171de89e4b99215050f008b8ecc0
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-speech/qt6-speech-speechd-plugin_6.8.0-0deepin1_amd64.deb
-    digest: dcf8a050f6f90c36f7c5a1291d6d6b6a83b2c80105f63352badb3be8dabd0ac4
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qttools5-dev_5.15.8-1+dde1+rb1_amd64.deb
+    digest: e73e9bded3c24718478b5ce042e05a69c98765b294f525a7de042c638f4251b2
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-svg/qt6-svg-dev_6.8.0-0deepin7_amd64.deb
-    digest: 80b98e2f1b45638acbf002264e7e69ae1716672a8c90027e9a79e411e98e9fcb
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttools-opensource-src/qttools5-private-dev_5.15.8-1+dde1+rb1_amd64.deb
+    digest: 69a41ae1b16e85b090d921e2052365b542245d7658f64e0a05b69cbfa1833976
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-svg/qt6-svg-private-dev_6.8.0-0deepin7_amd64.deb
-    digest: b8cd74ea247e6829cda191a20bfde4fe0fe39c1c1566322190944469108decc8
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qttranslations-opensource-src/qttranslations5-l10n_5.15.8-1+dde_all.deb
+    digest: 160a2bfa50107638f828505bedd6877dac198fbbdb90fdf680392e64a03dcd21
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/qt6-tools-dev-tools_6.8.0-0deepin3_amd64.deb
-    digest: bd393b38678a73c27c0d501fa9fb8014a65719760cb04a3acd813c0fd4d6ed5e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/qtwayland5-dev-tools_5.15.8-1+dde_amd64.deb
+    digest: 51fb4c19e24e245f0ff30797baa10fe04801e993016b41f6e8fa26a47cc62b78
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/qt6-tools-dev_6.8.0-0deepin3_amd64.deb
-    digest: e05c22f70ce1370504ba6f537748e799a20da4170718199080beacc63071fbd4
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/qtwayland5-private-dev_5.15.8-1+dde_amd64.deb
+    digest: 3a89c248b598e3614d571fd0fd9c1db2c12e80bd6bded073c744b876e0f16e08
   - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-tools/qt6-tools-private-dev_6.8.0-0deepin3_amd64.deb
-    digest: 54037eb0f4e26bde01e38ce19d70514de69419b93d1fa5879502aca6a9eb0838
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-translations/qt6-translations-l10n_6.8.0-0deepin2_all.deb
-    digest: dbfa88dae0e66fa60e6558fa80242bb78be8dec5b37ea449f85826b1b48cf25c
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/qt6-wayland-dev-tools_6.8.0-0deepin16_amd64.deb
-    digest: a47c378e7e631deb46adff175e0a1a39014d00692356d7595829ff9dcad93c7b
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/qt6-wayland-dev_6.8.0-0deepin16_amd64.deb
-    digest: 4e46903660cefe6a13e7c751a3e6f40d224415d6ca253ec77891233f7037c37e
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/qt6-wayland-private-dev_6.8.0-0deepin16_amd64.deb
-    digest: 4c984312390aefaf75d1b8f6928e429176ae22b2153935c2d445387020e75d5b
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-wayland/qt6-wayland_6.8.0-0deepin16_amd64.deb
-    digest: 96857a4ae371eb4907ac92e937fe9760450544949040a9f0b96795b9816cd349
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-xcb-private-headers-dev_6.8.0+dfsg-0deepin9_all.deb
-    digest: e70bbe5b35aa1009f8d3e8d58634052977864bad1d854230add6758ef238b1bc
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qt6-base/qt6-xdgdesktopportal-platformtheme_6.8.0+dfsg-0deepin36_amd64.deb
-    digest: 5857a959a5a40e77fb3934ad2dead99639566f4f0b70bb2c506fd4bde40cd0ea
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/s/spdx-licenses/spdx-licenses_3.8+dfsg-3_all.deb
-    digest: aae8ac2b6d3198d297d430cdb97e556365be2ff46d06525008ce071d97ac69c7
-  - kind: file
-    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/u/uos-license-content/uos-license-content_2.0.7_amd64.deb
-    digest: 82a4358051e045ed31367923fc6c3893aaceb6dfa9404d2a1c37f96f9de8db5e
+    url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/q/qtwayland-opensource-src/qtwayland5_5.15.8-1+dde_amd64.deb
+    digest: d3d149af47f845c12c9caacadadd69c14e825f526bbd9e1ee7e90ca67401cbc5
   - kind: file
     url: http://10.20.64.92:8080/crimson_runtime/stable_20260923_dtk-6.7.50-rerun/pool/main/u/usrmerge/usrmerge_39+nmu2deepin1_all.deb
     digest: 544feca0992471720cd5648cf88b0241df5d32cf72c2037ab5d19fd617a15a29
